@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.content {
+  width: auto;
+  margin: 40px 3%;
+}
+
+/*header*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+}
+
+.logo {
+  display: flex;
+	align-items: center;
+}
+.logo img{
+  width: 200px;
+  height: 200px;
+}
+
+.logo h1{
+  font-size: 72px;
+  line-height: 84px;
+}
+
+/*search bar*/
+.search{
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-width: 600px;
+  max-width: 600px;
+  height: 80px;
+  border: none;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+  padding-left: 32px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
+.search i{
+  font-size: 30px;
+  color: #B2B2B2;
+}
+
+.search input{
+  max-width: 500px;
+  border: none;
+  outline: none;
+  font-weight: normal;
+  font-size: 48px;
+  color: #B2B2B2 ;
+  
+}
+.search input:focus{
+  color: #000000;
+}
+
+/*table css*/
+.country-list{
+  border-collapse: separate;
+  border-spacing:0px 20px;
+  margin: 25px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.country-list thead tr,
+.country-list tbody tr {
+  border-radius: 20px;
+  -moz-box-shadow: inset 0 0 2px #888;
+  -webkit-box-shadow: inset 0 0 2px #888;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.country-list thead th {
+  color: white;
+  border-right: 1px solid;
+  border-right-color: white;
+}
+
+.country-list thead th:last-of-type, 
+.country-list tbody td:last-of-type {
+  border-right: 0px ;
+}
+
+.country-list th,
+.country-list td {
+  padding: 26px 22px;
+}
+
+#first-num-column {
+  background: #2196F3;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#name {
+  background: #2196F3;
+}
+
+#total {
+  background: #2196F3;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+ 
+.country-list tbody tr:first-of-type, 
+.country-list tbody td:first-of-type {
+  padding: 26px 0px 26px 22px;
+
+}
+
+.country-list tbody tr, 
+.country-list tbody td {
+  border-right: 1px solid;
+  border-right-color: rgb(160, 160, 160);
+}
+
+/*details window*/
+.details{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.details.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.details-content{
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 600px;
+  background-color: white;
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+.details-content.active{
+  opacity: 1;
+}
+
+.detail-name{
+  text-align: center;
+  font-size: 48px;
+}
+
+.detail-table{
+  box-sizing: border-box;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing:0px 21px;
+  margin: 15px 0;
+}
+
+.detail-table tbody td {
+  
+  font-weight: normal;
+  padding: 12px 15px;
+  color: #666666;
+}
+
+.detail-table tbody td:last-of-type {
+  text-align: right;
+}
+
+.detail-table i{
+  color: #666666;
+}
+
+button{
+  background-color:#2196F3;
+  border: none;
+  border-radius: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 10px 70px;
+  margin: 0 auto;
+  display: table;
+}
+
+button:hover{
+  background-color:#2583cf;
+}
