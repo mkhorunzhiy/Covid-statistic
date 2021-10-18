@@ -121,7 +121,9 @@
 .country-list tbody tr:first-of-type, 
 .country-list tbody td:first-of-type {
   padding: 26px 0px 26px 22px;
-
+  box-sizing: border-box;
+  width: 78px;
+  display: revert;
 }
 
 .country-list tbody tr, 
